@@ -51,7 +51,7 @@ export const CheckBoxElement = (props) => {
 
     return (
       <div class="form-check">
-        <input type="checkbox" defaultChecked={getOr(false, props.element.elementId)(props.valueMap)} onChange={props.handleChange} disabled={props.element.readOnly} class="form-check-input"/>
+        <input type="checkbox" checked={getOr(false, props.element.elementId)(props.valueMap)} onChange={props.handleChange} disabled={props.element.readOnly} class="form-check-input"/>
         <label class="form-check-label">  
           {props.element.displayName}
         </label>

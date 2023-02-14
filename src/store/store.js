@@ -6,6 +6,15 @@ export const [store, setStore] = createStore(data)
 
 
 export const [valueMap, setValueMap] = createStore({
-    firstname: '',
-    relatives: [{id: '1', firstName: 'Juan', lastName: 'Lopez'}] 
+        "firstname": "",
+        "relatives": [
+          {
+            "id": "1",
+            "firstName": "Juan",
+            "lastName": "Lopez"
+          }
+        ],
+        "status": "approved",
+        "registered": true,
+        "gender": "male"
 })
