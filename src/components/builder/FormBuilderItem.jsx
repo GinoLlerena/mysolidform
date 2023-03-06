@@ -19,6 +19,7 @@ function FormBuilderItem(props) {
           classList={{ "opacity-25": sortable.isActiveDraggable }}
           >
         <div class="card-header sortable"{...sortable.dragActivators} style={{cursor: "move"}}>
+          Feature {props.index+1}
           <div class="float-end">
             <span class="mx-auto px-2" onClick={()=> props.onToggle()}><i class="far fa-edit" style={{cursor:'pointer'}}></i></span>
             <span class="mx-auto px-2" onClick={onRemElement}><i class="fas fa-trash" style={{cursor:'pointer'}}></i></span>
