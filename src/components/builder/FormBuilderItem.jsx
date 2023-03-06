@@ -28,7 +28,7 @@ function FormBuilderItem(props) {
         <div class="card-body">
           {!editMode[element.elementId] 
           ? <EventsElement element={props.element} formElementValues={[]} valueMap={{}}  /> 
-          : <FormEditElementComponent element={props.element} onChangeDisplayName={onChangeDisplayName} onChangeType={onChangeType} onAddOption={props.onAddOption} index={props.index} />}
+          : <FormEditElementComponent element={props.element} onChangeDisplayName={onChangeDisplayName} onChangeType={onChangeType} onAddOption={props.onAddOption} onRemOption={props.onRemOption} index={props.index} />}
         </div>
       </div>
      

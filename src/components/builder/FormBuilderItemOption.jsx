@@ -6,7 +6,7 @@ function FormBuilderItemOption(props){
       <div class="mb-3">
         <div class="d-flex bd-highlight">
           <div class="p-2 bd-highlight align-self-center">
-            <span class="mx-auto px-2" onClick={()=>{}}><i class="fas fa-grip-vertical" style={{cursor:'move'}}></i></span>
+            <span class="mx-auto px-2"><i class="fas fa-grip-vertical" style={{cursor:'move'}}></i></span>
           </div>
           <div class="p-2 flex-grow-1 bd-highlight">
             <label htmlFor={props.item.elementvalueId}>Name</label>
@@ -20,7 +20,7 @@ function FormBuilderItemOption(props){
               required=""/>
           </div>
           <div class="p-2 bd-highlight align-self-center">
-            <span class="mx-auto px-2" onClick={()=>{}}><i class="fas fa-trash" style={{cursor:'pointer'}}></i></span>
+            <span class="mx-auto px-2" onClick={props.onRemOption}><i class="fas fa-trash" style={{cursor:'pointer'}}></i></span>
           </div> 
          </div>
       </div>

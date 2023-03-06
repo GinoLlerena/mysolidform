@@ -38,7 +38,7 @@ function FormEditElementComponent(props) {
                 <div class="mb-3">
                   <SortableProvider ids={props.element.formElementValues.map(item => `${props.index}:${item.elementvalueId}`)}>
                     <For each={props.element.formElementValues}>
-                      {(item) => (<Sortable id={`${props.index}:${item.elementvalueId}`}><FormBuilderItemOption item={item} /> </Sortable>)}
+                      {(item) => (<Sortable id={`${props.index}:${item.elementvalueId}`}><FormBuilderItemOption item={item} onRemOption={()=> props.onRemOption(item.elementvalueId) } /> </Sortable>)}
                     </For>
                   </SortableProvider>
                 </div>

@@ -70,6 +70,7 @@ function FormBuilder() {
   
     const onToggle = (elementId) => setStore('editMode', t => ({ ...t, [elementId]: !store.editMode[elementId]}))
     const onAddOption = (index) => (value) => setStore('items', index(), 'formElementValues', (t) => ([ ...t, createOption(t.length, value)]))
+    const onRemOption = (index) => elementvalueId => setStore('items', index(), 'formElementValues', (t) =>(t.filter((item) => (item.elementvalueId !== elementvalueId)))) 
   
     return(
       <div class="container">
@@ -92,7 +93,9 @@ function FormBuilder() {
                                 onChange={onChangeValue(index)} 
                                 editMode={store.editMode} 
                                 onToggle={() => onToggle(item.elementId)} 
-                                onAddOption={onAddOption(index)}/>
+                                onAddOption={onAddOption(index)}
+                                onRemOption={onRemOption(index)}
+                                />
                                 )}      
                 </For>
               </SortableProvider>
