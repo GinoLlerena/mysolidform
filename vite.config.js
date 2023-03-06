@@ -6,11 +6,6 @@ export default defineConfig({
   plugins: [ devtools({
     /* additional options */
     autoname: true, // e.g. enable autoname
-    locator: {
-      targetIDE: 'vscode',
-      componentLocation: true,
-      jsxLocation: true,
-    }
   }), solidPlugin()],
   server: {
     port: 3000,

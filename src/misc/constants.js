@@ -25,7 +25,8 @@ export const ELEMENT_TYPE = {
     ON_DRAG_END_ITEM_RENDER: 'ON_DRAG_END_ITEM_RENDER',
   }
   
-  export const TYPES = {
-     MAIN: 'MAIN'
+  export const TYPE = {
+    ELEMENT: 'ELEMENT',
+    SUB_ELEMENT: 'SUB_ELEMENT'
   }
   

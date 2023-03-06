@@ -9,10 +9,21 @@ import isArray from 'lodash/fp/isArray'
 import isFunction from 'lodash/fp/isFunction'
 import stubTrue from 'lodash/fp/stubTrue'
 import orderBy from 'lodash/fp/orderBy'
-import {ELEMENT_TYPE} from '../misc/constants'
+import {ELEMENT_TYPE, TYPE} from '../misc/constants'
 import { filter, first } from 'lodash/fp'
 import { findIndex } from 'lodash/fp'
 
+
+export function createOption(index, value){
+
+  const elementvalueId = (new Date().getTime()).toString();
+
+  return({
+    "displayName": value,
+    "displayOrder": index,
+    "elementvalueId": elementvalueId
+  })
+}
 
 export function createElement(index, type){
 
@@ -100,3 +111,5 @@ export function getSortedElements(array, valueMap){
     filter(filterBy)
   )(array)
 }
+
+export const isSortableElement = (sortable) =>sortable.data.type ===  TYPE.ELEMENT

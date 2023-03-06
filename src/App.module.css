@@ -31,3 +31,26 @@
     transform: rotate(360deg);
   }
 }
+
+.opacity-25 {
+  opacity: .25
+}
+
+
+.sortable {
+  --tw-bg-opacity: 1;
+  background-color: rgba(79,136,198,var(--tw-bg-opacity));
+  border-radius: .5rem;
+  cursor: move;
+  font-weight: 700;
+  padding: 1rem;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0/.1),0 1px 2px -1px rgb(0 0 0/.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(255,255,255,var(--tw-text-opacity));
+  white-space: normal;
+  touch-action: none
+}
